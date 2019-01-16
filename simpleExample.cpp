@@ -5,7 +5,7 @@
 
 int main() {
     ctre::phoenix::platform::can::SetCANInterface("vcan0");
-    ctre::phoenix::motorcontrol::can::TalonSRX talon = TalonSRX(1);
+    ctre::phoenix::motorcontrol::can::TalonSRX talon(1);
 
     while (true) {
         ctre::phoenix::platform::FeedWatchDog(100);
